@@ -1,0 +1,11 @@
+.error-boundary-root {
+  background-color: var(--color-white);
+  color: #003545;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}

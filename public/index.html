@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6B73FF" />
+    <meta
+      name="description"
+      content="Find and book your perfect flight with our advanced search and booking system"
+    />
+    <meta
+      name="keywords"
+      content="flights, travel, booking, airlines, tickets"
+    />
+    <meta name="author" content="Flight Inspirations" />
+
+    <!-- Favicon and App Icons -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Web App Capabilities -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Flight Inspirations" />
+
+    <!-- Title -->
+    <title>Flight Inspirations | Find Your Perfect Flight</title>
+  </head>
+
+  <body>
+    <noscript>
+      <div class="noscript-warning">
+        <h1>JavaScript is Disabled</h1>
+        <p>
+          This application requires JavaScript to function properly. Please
+          enable JavaScript in your browser settings.
+        </p>
+        <p>
+          For help enabling JavaScript, please visit
+          <a href="https://www.enable-javascript.com/">enable-javascript.com</a>
+        </p>
+      </div>
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- Loading state that appears briefly while app loads -->
+    <div
+      id="app-loading"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8fafc;
+        z-index: 9999;
+        transition: opacity 0.3s ease;
+      "
+    >
+      <div style="text-align: center">
+        <div
+          style="
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(107, 115, 255, 0.2);
+            border-radius: 50%;
+            border-top-color: #6b73ff;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+          "
+        ></div>
+        <h2 style="color: #2d3748; margin-bottom: 8px">
+          Loading Flight Inspirations
+        </h2>
+        <p style="color: #718096">Discover amazing destinations...</p>
+      </div>
+    </div>
+
+    <script>
+      // Hide loading spinner when app is mounted
+      window.addEventListener("load", function () {
+        var loading = document.getElementById("app-loading");
+        if (loading) {
+          loading.style.opacity = "0";
+          setTimeout(function () {
+            loading.style.display = "none";
+          }, 300);
+        }
+      });
+    </script>
+  </body>
+</html>

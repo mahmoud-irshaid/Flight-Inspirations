@@ -1,0 +1,90 @@
+.flightsearch-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.flightsearch-header-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+.flightsearch-header-icon {
+  font-size: 32px !important;
+  color: var(--color-primary-main) !important;
+}
+.flightsearch-title {
+  font-weight: 700 !important;
+}
+.flightsearch-description {
+  text-align: center;
+  color: var(--color-text-secondary) !important;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.flightsearch-form-paper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  border-radius: 32px !important;
+  background: var(--gradient-bg-form) !important;
+  border: 1px solid var(--color-grey-200);
+}
+.flightsearch-form-fields {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+@media (max-width: 600px) {
+  .flightsearch-form-fields {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .flightsearch-submit-btn {
+    width: 100%;
+  }
+}
+.flightsearch-input .MuiOutlinedInput-root {
+  background-color: var(--color-white);
+}
+.flightsearch-input .MuiOutlinedInput-root fieldset {
+  border-color: var(--color-grey-200);
+}
+.flightsearch-input .MuiOutlinedInput-root:hover fieldset {
+  border-color: var(--color-primary-main);
+}
+.flightsearch-submit-btn {
+  min-width: 140px !important;
+  min-height: 56px;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-main) 0%,
+    var(--color-primary-light) 100%
+  ) !important;
+  transition: all 0.3s ease;
+}
+.flightsearch-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-dark) 0%,
+    var(--color-primary-main) 100%
+  ) !important;
+}
+.flightsearch-submit-btn:disabled {
+  background: var(--color-grey-300) !important;
+  color: var(--color-grey-500) !important;
+}
+.flightsearch-error-box {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--color-error-light);
+  border: 1px solid var(--color-error-main);
+  text-align: center;
+}

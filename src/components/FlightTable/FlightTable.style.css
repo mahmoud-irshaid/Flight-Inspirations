@@ -1,0 +1,41 @@
+.table-container-root {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.table-header-box {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.table-header-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.table-header-icon {
+  font-size: 28px !important;
+  color: var(--color-primary-main) !important;
+}
+.table-title {
+  font-weight: 700 !important;
+}
+.table-chip-box {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.table-chip {
+  border-radius: 16px !important;
+}
+.table-chip .MuiChip-label {
+  font-weight: 600 !important;
+}
+.table-empty-box {
+  padding: 32px 0;
+  text-align: center;
+}
+.table-container {
+  min-width: 400px;
+}
