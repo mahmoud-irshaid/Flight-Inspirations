@@ -17,6 +17,9 @@
 - [License](#license)
 
 ---
+## Live Demo
+
+[Flight Inspirations App Demo](https://flight-inspirations-zeta.vercel.app/)
 
 ## Overview
 
