@@ -4,6 +4,11 @@
   <img src="public/flight-inspirations-logo.svg" alt="Flight Inspirations Logo" width="1000" height="200">
 </div>
 
+## Live Demo
+
+[Flight Inspirations App Demo](https://flight-inspirations-zeta.vercel.app/)
+
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -17,9 +22,6 @@
 - [License](#license)
 
 ---
-## Live Demo
-
-[Flight Inspirations App Demo](https://flight-inspirations-zeta.vercel.app/)
 
 ## Overview
 
