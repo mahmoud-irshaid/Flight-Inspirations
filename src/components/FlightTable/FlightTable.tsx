@@ -143,13 +143,13 @@ const FlightTable = ({
   );
 
   useEffect(() => {
-    if (data.length > 0) {
+    if (data.length > 0 && orderedColumns.length === 0) {
       const columns = Object.keys(data[0]).filter(
         (key) => key !== "originalIndex"
       );
       setOrderedColumns(columns);
     }
-  }, [data]);
+  }, [data, orderedColumns.length]);
 
   return (
     <Container maxWidth="xl" className="table-container-root">
