@@ -1,5 +1,9 @@
 # Flight Inspirations Admin Dashboard
 
+<div align="center">
+  <img src="public/flight-inspirations-logo.svg" alt="Flight Inspirations Logo" width="1000" height="200">
+</div>
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -103,7 +107,7 @@ The application is structured as a modular React SPA with the following main lay
 
 ```bash
 git clone https://github.com/mahmoud-irshaid/Flight-Inspirations.git
-cd Flight Inspirations
+cd Flight-Inspirations
 ```
 
 2. Install dependencies
